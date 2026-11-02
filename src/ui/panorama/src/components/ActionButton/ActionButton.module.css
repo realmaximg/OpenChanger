@@ -1,0 +1,117 @@
+.button {
+  height: 36px;
+  padding: 0px 14px;
+  vertical-align: center;
+  flow-children: right;
+  border-radius: var(--radius);
+  background-color: var(--color-control);
+  transition-property: background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-controlHover);
+}
+
+.small {
+  height: 28px;
+  padding: 0px 10px;
+}
+
+.square {
+  width: 36px;
+  padding: 0px;
+  flow-children: none;
+}
+
+.small.square {
+  width: 28px;
+}
+
+.primary {
+  background-color: var(--color-primary);
+}
+
+.primary:hover {
+  background-color: var(--color-primaryHover);
+}
+
+.installed {
+  background-color: var(--color-installed);
+}
+
+.installed:hover {
+  background-color: var(--color-installedHover);
+}
+
+.ghost {
+  background-color: var(--color-none);
+}
+
+.danger {
+  border: 1px solid var(--color-badLine);
+  background-color: var(--color-none);
+}
+
+.danger:hover {
+  background-color: var(--color-badSoft);
+}
+
+.button:disabled,
+.button:disabled:hover {
+  background-color: var(--color-none);
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: center;
+  horizontal-align: center;
+  wash-color: var(--color-textDim);
+  transition-property: wash-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.button:hover .icon {
+  wash-color: var(--color-white);
+}
+
+.button:disabled .icon {
+  wash-color: var(--color-textFaint);
+}
+
+.label {
+  vertical-align: center;
+  horizontal-align: center;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-body);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.withIcon .label {
+  margin-left: 8px;
+}
+
+.small .label {
+  font-size: var(--size-caption);
+}
+
+.primary .label,
+.installed .label {
+  font-size: var(--size-title);
+  color: var(--color-white);
+}
+
+.danger .label {
+  color: var(--color-badText);
+}
+
+.button:disabled .label {
+  color: var(--color-textFaint);
+}

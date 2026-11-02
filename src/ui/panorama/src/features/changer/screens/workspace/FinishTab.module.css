@@ -1,0 +1,62 @@
+.section {
+  width: 100%;
+  margin-bottom: 12px;
+  flow-children: down;
+}
+
+.wrap {
+  width: 100%;
+  flow-children: right-wrap;
+}
+
+.row {
+  width: 100%;
+  flow-children: right-wrap;
+}
+
+.group {
+  margin: 0px 28px 10px 0px;
+  flow-children: down;
+}
+
+.fields {
+  height: fit-children;
+  flow-children: right;
+}
+
+.seed {
+  width: 96px;
+}
+
+.dice {
+  margin-left: 6px;
+}
+
+.kills {
+  margin: 0px 8px 0px 14px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-textDim);
+}
+
+.count {
+  width: 96px;
+  vertical-align: center;
+}
+
+.eventRow {
+  width: 100%;
+  margin-top: 6px;
+  transition-property: opacity;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.concealed {
+  opacity: 0;
+}
+
+.event {
+  width: 100%;
+}

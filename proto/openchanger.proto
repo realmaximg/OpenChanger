@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message CAttribute_String {
+  optional string value = 1;
+}

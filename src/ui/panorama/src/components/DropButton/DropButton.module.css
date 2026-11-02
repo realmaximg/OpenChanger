@@ -1,0 +1,63 @@
+.drop {
+  height: 36px;
+  padding: 0px 10px 0px 12px;
+  flow-children: right;
+  vertical-align: center;
+  border: 1px solid var(--color-controlLine);
+  border-radius: var(--radius);
+  background-color: var(--color-box);
+  transition-property: border-color, background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.drop:hover,
+.drop:focus {
+  border-color: var(--color-controlLineHover);
+  background-color: var(--color-boxHover);
+}
+
+.active,
+.active:hover,
+.active:focus {
+  border-color: var(--color-selected);
+}
+
+.caption {
+  margin-right: 8px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-caption);
+  color: var(--color-textFaint);
+}
+
+.value {
+  max-width: 190px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.active .value {
+  color: var(--color-accent);
+}
+
+.chevron {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  vertical-align: center;
+  wash-color: var(--color-textDim);
+}
+
+.fill {
+  width: fill-parent-flow(1);
+}
+
+.fill .value {
+  width: fill-parent-flow(1);
+  max-width: 1000px;
+}

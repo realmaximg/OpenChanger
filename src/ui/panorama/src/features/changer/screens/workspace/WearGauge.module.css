@@ -1,0 +1,75 @@
+.gauge {
+  width: 100%;
+  margin-bottom: 14px;
+  flow-children: down;
+}
+
+.top {
+  width: 100%;
+  flow-children: right;
+}
+
+.readout {
+  width: fill-parent-flow(1);
+  height: 36px;
+  flow-children: right;
+}
+
+.field {
+  width: 104px;
+}
+
+.labels {
+  width: 100%;
+  height: 22px;
+  margin-top: 4px;
+  padding: 0px 2px;
+  flow-children: right;
+}
+
+.label {
+  height: 100%;
+  background-color: var(--color-none);
+  transition-property: background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.label:hover,
+.label:focus {
+  background-color: var(--color-control);
+}
+
+.short {
+  horizontal-align: center;
+  vertical-align: center;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-caption);
+  color: var(--color-textDim);
+}
+
+.label:hover .short {
+  color: var(--color-text);
+}
+
+.label.current .short {
+  color: var(--color-gauge);
+}
+
+.ruler {
+  width: 100%;
+  height: 26px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  padding: 0px 2px;
+  vertical-align: center;
+  flow-children: right;
+}
+
+.segment {
+  height: 100%;
+}

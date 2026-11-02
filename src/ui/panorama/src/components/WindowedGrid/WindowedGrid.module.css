@@ -1,0 +1,12 @@
+.viewport {
+  width: 100%;
+  height: fill-parent-flow(1);
+  margin-top: 8px;
+  flow-children: down;
+  overflow: squish scroll;
+}
+
+.grid {
+  width: 100%;
+  flow-children: right-wrap;
+}

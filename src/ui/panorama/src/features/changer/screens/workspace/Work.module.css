@@ -1,0 +1,23 @@
+.work {
+  width: fill-parent-flow(1);
+  height: 100%;
+  border-radius: var(--radius);
+  background-color: var(--color-stage);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  flow-children: down;
+}
+
+.wide .content {
+  flow-children: right;
+}
+
+.toasts {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 0px 16px;
+  vertical-align: bottom;
+}

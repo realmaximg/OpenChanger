@@ -1,0 +1,14 @@
+.row {
+  width: 100%;
+  flow-children: right;
+}
+
+.field {
+  height: 36px;
+  vertical-align: center;
+}
+
+.remove {
+  margin-left: 6px;
+  vertical-align: center;
+}

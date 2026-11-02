@@ -1,0 +1,27 @@
+.failed {
+  horizontal-align: center;
+  vertical-align: center;
+  flow-children: down;
+}
+
+.title {
+  horizontal-align: center;
+  font-family: var(--font-head);
+  font-size: var(--size-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-textDim);
+}
+
+.hint {
+  horizontal-align: center;
+  margin-top: 6px;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-textFaint);
+}
+
+.reload {
+  horizontal-align: center;
+  margin-top: 16px;
+}

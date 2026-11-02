@@ -1,0 +1,15 @@
+.layout {
+  width: 100%;
+  flow-children: right;
+}
+
+.detail {
+  width: fill-parent-flow(1);
+  min-width: 180px;
+  margin-left: 14px;
+  flow-children: down;
+}
+
+.field {
+  width: 140px;
+}

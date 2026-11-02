@@ -1,0 +1,27 @@
+{
+  "name": "openchanger-ui",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:release": "node build.mjs --release",
+    "watch": "node build.mjs --watch",
+    "check": "node api-types.mjs && tsc --noEmit && biome check ."
+  },
+  "dependencies": {
+    "solid-js": "1.9.17"
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.7",
+    "@babel/preset-typescript": "7.29.7",
+    "@biomejs/biome": "2.5.15",
+    "babel-plugin-jsx-panorama-expressions": "0.2.9",
+    "babel-preset-solid-panorama": "0.1.5",
+    "esbuild": "0.28.2",
+    "lightningcss": "1.33.0",
+    "typescript": "7.0.2"
+  }
+}

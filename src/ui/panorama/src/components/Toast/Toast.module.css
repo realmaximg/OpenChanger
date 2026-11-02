@@ -1,0 +1,39 @@
+.toast {
+  max-width: 100%;
+  horizontal-align: center;
+}
+
+.body {
+  flow-children: right;
+  border-radius: var(--radius);
+  background-color: var(--color-toast);
+  animation-name: life;
+  animation-duration: var(--duration-toast);
+  animation-timing-function: var(--curve);
+  animation-fill-mode: forwards;
+}
+
+.text {
+  padding: 10px 16px 10px 13px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  text-overflow: ellipsis;
+  color: var(--color-text);
+}
+
+.bad .text {
+  color: var(--color-badText);
+}
+
+@keyframes life {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

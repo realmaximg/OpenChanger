@@ -1,0 +1,14 @@
+.label {
+  margin-bottom: 6px;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-caption);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-textDim);
+}
+
+.inline {
+  margin-bottom: 0px;
+  vertical-align: center;
+}

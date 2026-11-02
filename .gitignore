@@ -1,0 +1,9 @@
+/build/
+/src/ui/panorama/node_modules/
+/src/ui/panorama/dist/
+/src/ui/panorama/generated/
+/CLAUDE.md
+/docs/
+/.superpowers/
+/tools/load.py
+__pycache__/

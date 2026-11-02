@@ -1,0 +1,51 @@
+.bar {
+  width: 100%;
+  padding: 8px 20px 14px 20px;
+  flow-children: right;
+}
+
+.note {
+  width: fill-parent-flow(1);
+  height: 38px;
+  margin-right: 12px;
+  vertical-align: center;
+}
+
+.problem {
+  width: 100%;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-badText);
+  text-overflow: ellipsis;
+}
+
+.targets {
+  vertical-align: center;
+  flow-children: right;
+}
+
+.caption {
+  margin-right: 6px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-textDim);
+}
+
+.side {
+  width: 64px;
+  height: 38px;
+  margin-left: 6px;
+}
+
+.both {
+  width: 86px;
+  height: 38px;
+  margin-left: 6px;
+}
+
+.single {
+  min-width: 140px;
+  height: 38px;
+}

@@ -1,0 +1,35 @@
+.chip {
+  height: 28px;
+  padding: 0px 10px;
+  margin: 0px 4px 4px 0px;
+  border-radius: var(--radius);
+  background-color: var(--color-control);
+  transition-property: background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.chip:hover,
+.chip:focus {
+  background-color: var(--color-controlHover);
+}
+
+.active,
+.active:hover,
+.active:focus {
+  background-color: var(--color-selected);
+}
+
+.label {
+  vertical-align: center;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-caption);
+  text-transform: uppercase;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.chip.active .label {
+  color: var(--color-onSelected);
+}

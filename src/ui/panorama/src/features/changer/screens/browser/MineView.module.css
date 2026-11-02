@@ -1,0 +1,178 @@
+.view {
+  width: 100%;
+  height: 100%;
+  flow-children: down;
+}
+
+.spacer {
+  width: fill-parent-flow(1);
+  height: 1px;
+}
+
+.confirm {
+  margin-left: 8px;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-badText);
+}
+
+.answer {
+  margin-left: 6px;
+  vertical-align: center;
+}
+
+.viewport {
+  width: 100%;
+  height: fill-parent-flow(1);
+  flow-children: right;
+  overflow: squish scroll;
+}
+
+.list {
+  width: fill-parent-flow(1);
+  flow-children: down;
+}
+
+.rail {
+  width: 24px;
+  height: 1px;
+}
+
+.groupHead {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 8px;
+  flow-children: right;
+}
+
+.groupTitle {
+  vertical-align: center;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-title);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gap {
+  width: 100%;
+  height: 12px;
+}
+
+.row {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 4px;
+  flow-children: right;
+  border: 1px solid var(--color-none);
+  background-color: var(--color-control);
+  transition-property: background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.row:hover {
+  background-color: var(--color-controlHover);
+}
+
+.current {
+  border-color: var(--color-accent);
+}
+
+.main:focus {
+  background-color: var(--color-control);
+}
+
+.main {
+  width: fill-parent-flow(1);
+  height: 100%;
+  flow-children: right;
+}
+
+.rarity {
+  width: 4px;
+  height: 100%;
+}
+
+.thumb {
+  width: 84px;
+  height: 52px;
+  margin: 0px 12px 0px 10px;
+  padding: 3px 6px;
+  vertical-align: center;
+  background-color: gradient(linear, 0% 0%, 0% 100%, from(var(--color-tileTop)), to(var(--color-tileBottom)));
+}
+
+.text {
+  width: fill-parent-flow(1);
+  vertical-align: center;
+  flow-children: down;
+}
+
+.name {
+  width: 100%;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-body);
+  color: var(--color-white);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.note {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--size-caption);
+  color: var(--color-textDim);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.missing {
+  width: 8px;
+  height: 8px;
+  margin: 0px 10px;
+  vertical-align: center;
+  border-radius: 50%;
+  background-color: var(--color-bad);
+}
+
+.remove {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: center;
+  border-radius: var(--radius);
+  background-color: var(--color-none);
+  transition-property: background-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.remove:hover,
+.remove:focus {
+  background-color: var(--color-badSoft);
+}
+
+.cross {
+  width: 12px;
+  height: 12px;
+  horizontal-align: center;
+  vertical-align: center;
+  wash-color: var(--color-textDim);
+}
+
+.remove:hover .cross {
+  wash-color: var(--color-badText);
+}
+
+.nothing {
+  horizontal-align: center;
+  margin-top: 80px;
+  flow-children: down;
+}
+
+.pick {
+  horizontal-align: center;
+}

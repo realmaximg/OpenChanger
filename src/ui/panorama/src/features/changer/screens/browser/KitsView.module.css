@@ -1,0 +1,77 @@
+.view {
+  width: 100%;
+  height: 100%;
+  flow-children: down;
+}
+
+.row {
+  width: 100%;
+  height: 40px;
+  padding-right: 24px;
+  flow-children: right;
+}
+
+.search {
+  margin-right: 8px;
+}
+
+.grid {
+  padding-right: 24px;
+}
+
+.tile {
+  width: 112px;
+  height: 144px;
+  margin: 0px 6px 8px 0px;
+  flow-children: down;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-none);
+  background-color: var(--color-tileName);
+  transition-property: border-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.tile:hover,
+.tile:focus {
+  border-color: var(--color-lineStrong);
+}
+
+.current,
+.current:hover,
+.current:focus {
+  border-color: var(--color-accent);
+}
+
+.art {
+  width: 100%;
+  height: 98px;
+  border-radius: var(--radius) var(--radius) 0px 0px;
+  background-color: gradient(linear, 0% 0%, 0% 100%, from(var(--color-tileTop)), to(var(--color-tileBottom)));
+}
+
+.tile:hover .art,
+.tile:focus .art {
+  background-color: gradient(linear, 0% 0%, 0% 100%, from(var(--color-tileHoverTop)), to(var(--color-tileHoverBottom)));
+}
+
+.image {
+  padding: 6px;
+}
+
+.rarity {
+  width: 100%;
+  height: 4px;
+}
+
+.name {
+  width: 100%;
+  height: 40px;
+  padding: 4px 6px 0px 6px;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-caption);
+  color: var(--color-white);
+  text-align: center;
+  text-overflow: ellipsis;
+}

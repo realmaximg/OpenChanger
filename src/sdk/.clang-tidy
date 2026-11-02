@@ -1,0 +1,15 @@
+Checks: >-
+  bugprone-*,
+  readability-*,
+  modernize-*,
+  performance-*,
+  misc-*,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -readability-identifier-naming,
+  -modernize-use-trailing-return-type
+WarningsAsErrors: '*'
+HeaderFilterRegex: '(src|tests)[/\]'
+CheckOptions:
+  misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic: true
+  misc-include-cleaner.IgnoreHeaders: 'Windows Kits[/\].*'

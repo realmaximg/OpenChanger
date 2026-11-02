@@ -1,0 +1,70 @@
+.slot {
+  width: 76px;
+  height: 112px;
+  margin-right: 6px;
+  flow-children: down;
+  border: 1px solid var(--color-none);
+  border-radius: var(--radius);
+  background-color: var(--color-box);
+  transition-property: background-color, border-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--curve);
+}
+
+.slot:hover,
+.slot:focus {
+  background-color: var(--color-boxHover);
+}
+
+.filled {
+  background-color: var(--color-tileName);
+}
+
+.filled:hover {
+  border-color: var(--color-lineStrong);
+}
+
+.active,
+.active:hover,
+.active:focus {
+  border-color: var(--color-accent);
+}
+
+.picking,
+.picking:hover,
+.picking:focus {
+  border-color: var(--color-accent);
+  background-color: var(--color-selected);
+}
+
+.image {
+  width: 100%;
+  height: 78px;
+  border-radius: var(--radius) var(--radius) 0px 0px;
+  padding: 4px 10px;
+  background-color: gradient(linear, 0% 0%, 0% 100%, from(var(--color-tileTop)), to(var(--color-tileBottom)));
+}
+
+.name {
+  width: 100%;
+  height: 32px;
+  padding: 3px 4px 0px 4px;
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: var(--size-caption);
+  color: var(--color-white);
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.plus {
+  horizontal-align: center;
+  vertical-align: center;
+  font-family: var(--font-body);
+  font-size: var(--size-display);
+  color: var(--color-textFaint);
+}
+
+.picking .plus {
+  color: var(--color-onSelected);
+}
