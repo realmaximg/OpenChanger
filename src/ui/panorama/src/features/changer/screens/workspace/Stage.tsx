@@ -21,7 +21,6 @@ import {
   view,
 } from '../../editor';
 import * as game from '../../game';
-import { wide } from '../../layout';
 import { background, nextPosition, players, scrape, side, usePanel, weapon, zoomed } from '../../scene';
 import { favorites, shared, toggleFavorite } from '../../store';
 import css from './Stage.module.css';
@@ -30,7 +29,7 @@ import { Toolbar } from './Toolbar';
 function cameraOf(entry: Entry) {
   if (entry.kind === 'knife') return 'cam_melee';
   if (entry.kind === 'gloves') return 'cam_gloves';
-  return game.weaponCamera(entry.id, untrack(wide) ? 2 : 1);
+  return game.weaponCamera(entry.id, 1);
 }
 
 function lookatWeapon(entry: Entry) {
@@ -179,14 +178,14 @@ export function Stage() {
     if (!entry || !tabShown()) return '';
     const what = shared(entry) ? entry.key : entry.item.Definition;
     const first = view() === 'first' ? revision() : 0;
-    return `${what}:${view()}:${placing()}:${background()}:${first}:${wide()}`;
+    return `${what}:${view()}:${placing()}:${background()}:${first}`;
   });
   const favorite = () => {
     const entry = selected();
     return entry !== undefined && favorites().includes(entry.key);
   };
   return (
-    <Panel class={css.stage} classList={{ [css.wide]: wide() }}>
+    <Panel class={css.stage}>
       <Show when={selected()} fallback={<Label class={css.emptyTitle} text={t.selectItem} />}>
         {(entry: Accessor<Entry>) => (
           <>

@@ -2,7 +2,6 @@ import { For, Match, Switch } from 'solid-js';
 import { t } from '../../../../i18n';
 import type { Entry } from '../../catalog';
 import { chooseTab, type EditorTab, tab, tabsOf } from '../../editor';
-import { wide } from '../../layout';
 import { CharmTab } from './CharmTab';
 import css from './Editor.module.css';
 import { FinishTab } from './FinishTab';
@@ -18,7 +17,7 @@ function titleOf(name: EditorTab, entry: Entry) {
 export function Editor(props: { entry: Entry }) {
   const tabs = () => tabsOf(props.entry);
   return (
-    <Panel class={css.editor} classList={{ [css.wide]: wide() }}>
+    <Panel class={css.editor}>
       <Panel class={css.tabs} visible={tabs().length > 1}>
         <For each={tabs()}>
           {(name, index) => (

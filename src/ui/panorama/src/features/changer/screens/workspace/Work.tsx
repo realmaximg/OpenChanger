@@ -3,7 +3,6 @@ import { Toast } from '../../../../components/Toast/Toast';
 import { Presence } from '../../../../design/motion';
 import type { Entry } from '../../catalog';
 import { selected } from '../../editor';
-import { wide } from '../../layout';
 import { message } from '../../toast';
 import { Editor } from './Editor';
 import { Stage } from './Stage';
@@ -11,7 +10,7 @@ import css from './Work.module.css';
 
 export function Work() {
   return (
-    <Panel class={css.work} classList={{ [css.wide]: wide() }}>
+    <Panel class={css.work}>
       <Panel class={css.content}>
         <Stage />
         <Show when={selected()}>

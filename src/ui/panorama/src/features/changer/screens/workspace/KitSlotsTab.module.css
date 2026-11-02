@@ -3,26 +3,14 @@
   flow-children: right;
 }
 
-.stacked {
-  flow-children: down;
-}
-
 .slots {
   margin: 0px 14px 12px 0px;
   flow-children: right-wrap;
 }
 
-.stacked .slots {
-  width: 100%;
-}
-
 .detail {
   width: fill-parent-flow(1);
   flow-children: down;
-}
-
-.stacked .detail {
-  width: 100%;
 }
 
 .head {

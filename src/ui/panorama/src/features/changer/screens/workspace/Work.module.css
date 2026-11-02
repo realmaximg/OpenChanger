@@ -11,10 +11,6 @@
   flow-children: down;
 }
 
-.wide .content {
-  flow-children: right;
-}
-
 .toasts {
   width: 100%;
   margin-bottom: 24px;

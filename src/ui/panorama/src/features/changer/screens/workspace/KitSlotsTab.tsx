@@ -14,7 +14,6 @@ import {
   stickerIn,
 } from '../../editor';
 import { type KitKind, openKits, pickingKits } from '../../kits';
-import { wide } from '../../layout';
 import { KitSlot } from './KitSlot';
 import css from './KitSlotsTab.module.css';
 import { WearGauge } from './WearGauge';
@@ -62,7 +61,7 @@ export function KitSlotsTab(props: Props) {
   };
   const remove = () => (props.kind === 'sticker' ? removeSticker(slot()) : setPatch(slot(), undefined));
   return (
-    <Panel class={css.layout} classList={{ [css.stacked]: wide(), [css.sticker]: props.kind === 'sticker' }}>
+    <Panel class={css.layout} classList={{ [css.sticker]: props.kind === 'sticker' }}>
       <Panel class={css.slots}>
         <For each={Array.from({ length: props.slots }, (_, index) => index)}>
           {(at) => (
