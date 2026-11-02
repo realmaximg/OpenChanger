@@ -47,7 +47,7 @@ npm run check              # api.d.ts present, tsc and Biome
 A changed C++ method changes `api.d.ts`, and `npm run check` fails until the GUI follows it.
 
 A pushed tag `v*` runs `.github/workflows/release.yml`: GitHub builds the release DLL the same way and publishes it
-with its SHA-256 as a release of that tag.
+as a release of that tag.
 
 ## Debugging
 
