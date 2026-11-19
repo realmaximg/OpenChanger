@@ -21,7 +21,7 @@
 #define PtItems "48 8B D9 48 8D 54 24 38 48 81 C1 * * * * 41 0F B6 F8"
 #define PtGetAttributeDefinitionByName                                         \
   "48 89 5C 24 10 48 89 6C 24 18 57 41 56 41 57 48 83 EC 60 48 8D 05 ? ? ? ? " \
-  "48 C7 44 24 28 91 37 00 00"
+  "48 C7 44 24 28 ? ? 00 00"
 #define PtStringFieldToInt                                                     \
   "48 89 6C 24 20 41 56 48 83 EC 20 4C 8B 72 08 48 8B E9 48 85 C9 74 ? 80 39 " \
   "00 74 ? 48 89 74 24 38 48 63 32"
