@@ -56,6 +56,7 @@ add_library(oc_objects OBJECT
     src/app/features.cpp
     src/app/LoopDeactivateAllSystems.cpp
     src/game/Decode.cpp
+    src/game/DecodeDelta.cpp
     src/game/DecodedHandler.cpp
     src/game/find.cpp
     src/game/FireEventClientSide.cpp

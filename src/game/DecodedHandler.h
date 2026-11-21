@@ -3,6 +3,8 @@
 #include "sdk/client/CEntityInstance.h"
 #include "sdk/networksystem/CNetworkFieldChangedEventQueue.h"
 
+#include <cstdint>
+
 namespace oc {
 
 class DecodedHandler {
@@ -15,13 +17,13 @@ public:
   DecodedHandler &operator=(const DecodedHandler &) = delete;
 
 private:
-  friend void dispatchDecoded(CEntityInstance &Entity,
+  friend void dispatchDecoded(std::int32_t Index,
                               CNetworkFieldChangedEventQueue *Changes);
 
   Callback Handler;
 };
 
-void dispatchDecoded(CEntityInstance &Entity,
+void dispatchDecoded(std::int32_t Index,
                      CNetworkFieldChangedEventQueue *Changes);
 
 } // namespace oc
