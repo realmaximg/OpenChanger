@@ -10,7 +10,7 @@
   "48 8B 06 48 8B CE FF 50 * 48 8B D0 48 8D 0D ? ? ? ? FF 15 ? ? ? ? 49 8B "   \
   "04 24 48 8B D6 49 8B CC FF 50 50"
 #define PtGetString                                                            \
-  "48 8B 02 48 8D 0D ? ? ? ? 4C 8B F2 41 B8 FA DA 03 3E BA 02 00 00 00 48 8B " \
+  "48 8B 02 48 8D 0D ? ? ? ? 4C 8B ? 41 B8 FA DA 03 3E BA 02 00 00 00 48 8B "  \
   "58 *"
 #define PtGetPlayerController                                                  \
   "49 8B 4D 00 BA 04 00 00 00 41 B8 13 F2 E4 ED 48 8B F0 48 8B 99 * * * *"

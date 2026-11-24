@@ -17,7 +17,7 @@
   "40 53 56 57 48 83 EC ? 48 8B FA 48 89 6C 24 ? 48 8B F1 48 3B 91 A8 01 00 "  \
   "00"
 #define PtAddStyleFiles                                                        \
-  "40 53 55 41 54 41 57 48 83 EC ? 49 63 E8 41 0F B6 D9 4C 8B E2 4C 8B F9 45 " \
+  "40 53 55 41 ? 41 ? 48 83 EC ? 49 63 E8 41 0F B6 D9 4C 8B ? 4C 8B ? 45 "     \
   "85 C0 75 ? 84 DB 74 ? 33 D2 E8 * * * *"
 #define PtClearStyleFiles "33 D2 E9 * * * *"
 
